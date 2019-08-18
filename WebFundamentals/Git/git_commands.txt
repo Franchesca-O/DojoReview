@@ -14,4 +14,5 @@ git pull - pulls the changes in a remote repository to your own local repository
 git clone ___ - clones a remote repository in ___ to your own local folder.
 git log -10 shows the last ten log entries.
 Adding the -p option tells Git to display the diff that revision created
+git diff - shows changes
 git diff --stat - option to see what changes have been made since a particular commit.

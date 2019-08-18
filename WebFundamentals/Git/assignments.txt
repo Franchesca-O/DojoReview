@@ -1,0 +1,95 @@
+Keilas-MBP:DojoReview franchesca$ pwd
+/Users/franchesca/Desktop/DojoReview
+Keilas-MBP:DojoReview franchesca$ ls
+Pre-bootcamp    WebFundamentals
+Keilas-MBP:DojoReview franchesca$ cd/
+bash: cd/: No such file or directory
+Keilas-MBP:DojoReview franchesca$ cd /
+Keilas-MBP:/ franchesca$ dir
+bash: dir: command not found
+Keilas-MBP:/ franchesca$ pwd
+/
+Keilas-MBP:/ franchesca$ ls
+(null)                          CoreSyncInstall.log.3.gz        User Information                dev                             opt
+Applications                    CoreSyncInstall.log.4.gz        Users                           etc                             private
+CoreSyncInstall.log             IDriveLocal                     Volumes                         home                            sbin
+CoreSyncInstall.log.0.gz        Library                         anaconda3                       installer.failurerequests       tmp
+CoreSyncInstall.log.1.gz        Network                         bin                             macOS Install Data              usr
+CoreSyncInstall.log.2.gz        System                          cores                           net                             var
+Keilas-MBP:/ franchesca$ cd users
+Keilas-MBP:users franchesca$ dir
+bash: dir: command not found
+Keilas-MBP:users franchesca$ ls
+Deleted Users           PortDetect.log          Shared                  franchesca              kfranchescaortiz
+Keilas-MBP:users franchesca$ cd franchesca/desktop
+Keilas-MBP:desktop franchesca$ ls
+DojoReview                              davechild_linux-command-line.pdf        ~$tiz_KF_Resume.docx
+bookmarks_8_17_19.html                  ~$VS16 Mid-term.pptx                    ~$vernmentReports.docx
+Keilas-MBP:desktop franchesca$ cd dojoreview
+Keilas-MBP:dojoreview franchesca$ ls
+Pre-bootcamp    WebFundamentals
+Keilas-MBP:dojoreview franchesca$ cd webfundamentals
+Keilas-MBP:webfundamentals franchesca$ ls
+Git     HTML
+Keilas-MBP:webfundamentals franchesca$ cd ~
+Keilas-MBP:~ franchesca$ ls
+ANALYSTS                        Music                           Untitled2.ipynb                 coverent.ipynb                  package-lock.json
+Applications                    Pictures                        Untitled3.ipynb                 db.sqlite3.sqbpro               untitled.txt
+Creative Cloud Files            Public                          Untitled4.ipynb                 getting-data                    untitled1.txt
+Desktop                         Untitled Folder                 Untitled5.ipynb                 iCloud Drive (Archive)          visualizations
+Documents                       Untitled Folder 1               Untitled6.ipynb                 iCloud Drive (Archive) - 1      war
+Downloads                       Untitled Folder 2               WFF                             iCloud Drive (Archive) - 2      web_scraping.py
+Library                         Untitled.ipynb                  anaconda2                       nltk_data
+Movies                          Untitled1.ipynb                 coverent.ipnyb                  nltk_data.zip
+Keilas-MBP:~ franchesca$ cd desktop
+Keilas-MBP:desktop franchesca$ cd desktop
+bash: cd: desktop: No such file or directory
+Keilas-MBP:desktop franchesca$ mkdir set
+Keilas-MBP:desktop franchesca$ cd set
+Keilas-MBP:set franchesca$ touch index.html
+Keilas-MBP:set franchesca$ touch styles.css commands.txt
+Keilas-MBP:set franchesca$ ls
+commands.txt    index.html      styles.css
+Keilas-MBP:set franchesca$ cp index.html index_2.html
+Keilas-MBP:set franchesca$ ls
+commands.txt    index.html      index_2.html    styles.css
+Keilas-MBP:set franchesca$ rm styles.css
+Keilas-MBP:set franchesca$ ls
+commands.txt    index.html      index_2.html
+Keilas-MBP:set franchesca$ cd ..
+Keilas-MBP:desktop franchesca$ pwd
+/Users/franchesca/desktop
+Keilas-MBP:desktop franchesca$ mkdir destination
+Keilas-MBP:desktop franchesca$ cd set
+Keilas-MBP:set franchesca$ ls
+commands.txt    index.html      index_2.html
+Keilas-MBP:set franchesca$ mv index_2.html ../destination
+Keilas-MBP:set franchesca$ pwd
+/Users/franchesca/desktop/set
+Keilas-MBP:set franchesca$ cd ..
+Keilas-MBP:desktop franchesca$ cd destination
+Keilas-MBP:destination franchesca$ ls
+index_2.html
+Keilas-MBP:destination franchesca$ cd ..
+Keilas-MBP:desktop franchesca$ cd set
+Keilas-MBP:set franchesca$ ls
+commands.txt    index.html
+Keilas-MBP:set franchesca$ cd
+Keilas-MBP:~ franchesca$ pwd
+/Users/franchesca
+Keilas-MBP:~ franchesca$ cd desktop
+Keilas-MBP:desktop franchesca$ ls
+DojoReview                              davechild_linux-command-line.pdf        set                                     ~$tiz_KF_Resume.docx
+bookmarks_8_17_19.html                  destination                             ~$VS16 Mid-term.pptx                    ~$vernmentReports.docx
+Keilas-MBP:desktop franchesca$ rm -rf destination
+Keilas-MBP:desktop franchesca$ ls
+DojoReview                              davechild_linux-command-line.pdf        ~$VS16 Mid-term.pptx                    ~$vernmentReports.docx
+bookmarks_8_17_19.html                  set                                     ~$tiz_KF_Resume.docx
+Keilas-MBP:desktop franchesca$ cd dojoreview
+Keilas-MBP:dojoreview franchesca$ cd git
+bash: cd: git: No such file or directory
+Keilas-MBP:dojoreview franchesca$ ls
+Pre-bootcamp    WebFundamentals
+Keilas-MBP:dojoreview franchesca$ cd webfundamentals/git
+Keilas-MBP:git franchesca$ touch command.txt
+Keilas-MBP:git franchesca$

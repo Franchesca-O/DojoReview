@@ -16,4 +16,5 @@ git log -10 shows the last ten log entries.
 Adding the -p option tells Git to display the diff that revision created
 git diff - shows changes
 git diff --stat - option to see what changes have been made since a particular commit.
-????
+git remote add origin <github code>.git
+git push origin master

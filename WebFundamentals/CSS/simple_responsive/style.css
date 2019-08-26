@@ -1,0 +1,59 @@
+* {
+    padding: 10px;
+}
+
+.title{
+    background-color: darkgrey;
+    margin-bottom: 5px;
+    border: solid gray 1px;
+    width: 100%;
+}
+#body{
+    background-color: lightgrey;
+    margin-top: 5px;
+    border: solid gray 1px;
+    width: 100%;
+}
+
+.footer{
+    background-color: lightyellow;
+    border: solid gray 1px;
+    margin-top: -12px;
+    width:100%;
+}
+
+span{
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 480px){
+    .sm-4 {
+        width: 100%;
+    }
+    .sm-0{
+        display: none;
+    }
+    .smh {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 481px){
+    .md-4{
+        width: 100%;
+    }
+    .md-0{
+        display:none;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .lg-4{
+        width:100%;
+        display: block;
+    }
+    .lg-0{
+        display: none;
+    }
+
+}

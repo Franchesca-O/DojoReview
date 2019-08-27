@@ -24,7 +24,7 @@ h2{
     background: radial-gradient(ellipse at center,#705963,#1e0d13);
 }
 
-#me{
+.me{
     width: 400px;
     border: solid 6px silver;
     margin: 20px 0px 20px 30px;
@@ -153,33 +153,146 @@ h2{
 }
 
 
+@media only screen and (max-width: 480px){
+
+    .container-sm{
+        width:480px;
+        height: 100%;       
+    }
+    .sm-0{
+        display: none;
+    }
+
+    .purple-sm{
+        height: 800px;
+    }
+
+    .about-sm{
+        width: 105%;
+        position:absolute;
+        top: 400px;
+        left: 11%;
+        padding: 1%;
+    }
+
+    .text_boxes-sm{
+        width: 100%;
+        height: 200px;
+        margin-left: -4px;
+        padding: 1%;
+        text-indent: -175px;
+    }
+
+    .boxes-sm{
+        width: 110%;
+        position: absolute;
+        left: 10%;
+    }
+
+    .LaMode-sm {
+        top: 84%;
+
+    }
+
+    .FC-sm{
+        top: 92%;
+    }
+
+    .FE-sm{
+        top: 100%;
+    }
+
+
+
+
+
+}
+
 @media only screen and (min-width: 481px){
 
     .container-md{
-        width:100%
+        width:130%;
+        height:       h
     }
 
     .purple-md{
-        width:96%;
-        height: 100%
+        width:100%;
+        height: 90%
         
     }
 
     .about-md{
-        width: 40%;
+        width: 55%;
         position:absolute;
         top: 110px;
-        left: 45%;
+        left: 60%;
         padding: 0px 15px 0px 15px;
-        margin-left: 1%
+        /* margin-left: 1% */
     }
 
     .text_boxes-md{
         width: 100%;
-        padding: 0px 15px 0px 15px;
-        /* margin-left: 2%; */
+        padding: 0px 15px 25px 15px;
+        margin-left: -3.5%;
         height: auto;
     }
+
+    .me-md{
+        margin-left: 2%;
+    }
+
+    .boxes-md{
+        width: 35%;
+        position: absolute;
+        display: inline-block;
+        top: 430px;
+    }
+    .LaMode-md {
+        left: 6%;
+
+    }
+
+    .FC-md{
+        left: 44%;
+    }
+
+    .FE-md{
+        left: 82%;
+    }
+
+    .pics-md{
+        width:100%;
+    }
+
+    .examples-md{
+        width: 100%;
+        height: 930%;
+    }
+    .technologies-md{
+        width: 100%;
+        display: block;
+        padding:  10px 0px 10px 1px; 
+        position: absolute;
+        bottom: -925%;
+        margin-bottom: 20%
+    }
+    .tech-md{
+        position:absolute;
+        top: 915%;
+    }
+
+    .buttonbox-md{
+        position: absolute; 
+        top: 1250%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+
+
+
+    
 }
 
 
@@ -249,7 +362,8 @@ h2{
         margin-bottom: 20%
         }
 
-    .tech-lg{
+    
+        .tech-lg{
         position:absolute;
         top: 915%;
     }

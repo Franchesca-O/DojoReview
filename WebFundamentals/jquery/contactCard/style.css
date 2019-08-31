@@ -1,0 +1,29 @@
+#forms, #wall {
+    display: inline-block;
+    width: 500px;
+    height: 600px;
+    vertical-align: top;
+    padding: 25px;
+}
+
+#forms {
+    background-color: lightblue;
+}
+
+#wall {
+    background-color: lightgreen;
+}
+
+.box {
+    width: 400px;
+    height: 75px;
+    border: solid black 1px;
+    padding: 25px;
+    padding-top: 0px;
+    margin-bottom: 25px;
+
+}
+
+.back {
+    display: none;
+}

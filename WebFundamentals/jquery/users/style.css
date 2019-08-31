@@ -1,0 +1,11 @@
+table {
+    border: 1px solid black;
+    margin-bottom: 100px;
+}
+th {
+    padding-right: 70px;
+
+}
+hr{
+    width: 650px;
+}

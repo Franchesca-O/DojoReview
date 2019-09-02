@@ -1,0 +1,82 @@
+body {
+    background-color: black;
+    margin: 0px;
+}
+div.row div{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+div.brick{
+    background-color: blue;
+    vertical-align: top;
+}
+
+div.coin{
+    background-image: url("images/coin.png");
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: top;
+}
+div.cherries{
+    background-image: url("images/cherries.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: top;
+}
+div#pacman{
+    background-image: url("images/pacman.gif");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    position:absolute;
+}
+
+div#ghost{
+    background-image: url("images/ghost.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    position:absolute;
+}
+
+.empty{
+    vertical-align: top;
+
+}
+
+#score {
+    border: 1px white solid;
+    width: 80px;
+    height: 30px;
+    margin-top: 5px;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    position: absolute;
+    top: 5px;
+    left: 520px;
+}
+
+#lives {
+    border: 1px white solid;
+    width: 80px;
+    height: 30px;
+    margin-top: 5px;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    position: absolute;
+    top: 50px;
+    left: 520px;
+}
+

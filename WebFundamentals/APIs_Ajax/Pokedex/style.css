@@ -1,0 +1,36 @@
+img {
+    display: inline-block;
+}
+
+#images {
+    background-color: lightgreen;
+    width: 700px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#info {
+    background-color: lightpink;
+    width: 300px;
+    height: 550px;
+    vertical-align: top;
+    display: inline-block;
+    border: solid red 10px;
+    padding: 30px;
+}
+
+#name {
+    text-align: center;
+}
+
+#info_pic{
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -50px;
+}
+
+ul { 
+    margin: 0; padding: 0;
+}     

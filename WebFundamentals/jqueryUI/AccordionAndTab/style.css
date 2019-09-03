@@ -1,0 +1,9 @@
+#accordion {
+    width: 500px;
+}
+
+#tabs {
+    width: 800px;
+}
+
+#draggable { width: 150px; height: 150px; padding: 0.5em; }

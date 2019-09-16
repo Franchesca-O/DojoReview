@@ -1,0 +1,35 @@
+.card, .card_back{
+background-color: lightblue;
+width: 250px;
+height: 300px;
+margin: 30px;
+text-align: center;
+border-radius: 15px;
+vertical-align: top;
+padding: 20px;
+}
+
+.card{
+    display: inline-block;
+}
+.points {
+margin-top: 120px;
+font-size: 52px;
+}
+
+li {
+    list-style-type: none;
+    text-align: center;
+
+}
+
+ul {
+    margin-left: -50px;
+    margin-top: 40px;
+
+}
+
+.card_back {
+    display: none;
+    background-color: red;
+}

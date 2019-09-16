@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    var arr1 = [1000,7,2,1,50,73,96,8,28,3,25,4,6,999];
+    var arr2 = [1,2,3,4,5,6,7,8,10,9]
+    var temp = 0;
+    var num = 0;
+    var exit = 0;
+    function bubbleSort(arr){
+        while (num < arr.length){
+            for (var i = 0; i < arr.length;i++){
+                if(arr[i] > arr[i+1] ){
+                    temp = arr[i];
+                    arr[i] = arr[i+1]
+                    arr[i+1] = temp
+                    console.log(arr)
+            } else {
+                exit ++;
+                if( exit == arr.length){
+                    console.log("all sorted")
+                    break
+                }
+            }
+        } exit = 0; 
+            num ++;
+    }   
+} 
+
+    bubbleSort (arr1)   
+    bubbleSort(arr2)
+    </script>
+
+
+</body>
+</html>

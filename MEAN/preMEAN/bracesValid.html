@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Braces Valid</title>
+</head>
+<body>
+    <script>
+    function bracesValid(braces){
+        var openers = ["{,(,["]
+        var closers = ["},),]"]
+        for (var i = 0; i < braces.length; i++){
+            for (var j = 0; j < openers.length; j++){
+                if(braces[i] = openers[j]){
+                    console.log(braces[i],openers[j])
+                }
+            }
+            // for (var k =0; k <closers; k++){
+            //     if (braces[i] = closers[k]) {
+            //         console.log("closer")
+            //     }
+            // }
+        }
+    }
+
+
+    bracesValid("{{()}}[]")    
+
+    </script>
+</body>
+</html>

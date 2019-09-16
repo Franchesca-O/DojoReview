@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="jquery-3.4.1.min.js"></script>
+    <title>Hunting Github</title>
+</head>
+<body>
+    <form>
+    <input type="text" name="input" id="input"><br>
+    <input type="submit" value="Submit" id="submit">
+    </form>
+    <script>
+    $(document).ready(function (){
+
+        $('form').submit(function () {
+            var name = $('#input').val();
+            // console.log(`https://api.github.com/users/${name}`)
+            $.get(`https://api.github.com/users/${name}`, displayName)
+            return false;            
+    });
+
+        
+        function displayName(data) {
+            console.log(data)
+            var login = data.login
+            $('#submit').after('<p>'+login+'</p>')
+                       
+        }
+
+
+    });
+
+
+
+
+
+
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    </script>
+
+    
+</body>
+</html>

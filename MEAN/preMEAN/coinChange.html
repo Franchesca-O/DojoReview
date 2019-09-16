@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coin Change</title>
+</head>
+<body>
+    <script>
+    
+    var dollar = 100;
+    var quarter = 25;
+    var dime = 10;
+    var nickel = 5;
+    var cents = 1; 
+    var dict = {};
+    var input = {dollars: 2, dimes: 10, nickels: 2, pennies: 5} 
+
+    function convertCurrency(input){
+        var total = 0;
+        var dollars = input['dollars'] * 100;
+        if (dollars > 0){
+            total += dollars;
+        }
+        var quarters = input['quarters'] * 25;
+        if (quarters > 0){
+            total += quarters;
+        }
+        var dimes = input['dimes'] * 10;
+        if(dimes > 0){
+            total += dimes;
+        }
+        var nickels = input['nickels'] * 5;
+        if (nickels > 0){
+            total += nickels;
+        }
+        var pennies = input['pennies'];
+        if (pennies > 0){
+            total += pennies;
+        }
+        console.log(total);
+        coinChange(total);
+    }
+
+
+convertCurrency(input)
+
+
+
+    function coinChange(coins){
+
+        var dollars = Math.floor(coins / dollar);
+        var coins = coins % dollar;
+        if (dollars > 0){
+        dict['dollars'] = dollars;
+        }
+         
+        var quarters = Math.floor(coins / quarter);
+        coins = coins % quarter;
+        if (quarters > 0){
+            dict['quarters'] = quarters;
+        
+        }
+        var dimes = Math.floor(coins / dime);
+        coins = coins % dime
+        if (dimes > 0){
+            dict['dimes'] = dimes;
+        }
+        var nickels = Math.floor (coins / nickel);
+        coins = coins % nickel;
+        if (nickels > 0){
+            dict['nickels'] = nickels;
+        } 
+        
+        var cents = coins;
+        if (cents > 0){
+            dict['pennies'] = cents; 
+        }
+        console.log(dict)
+        dict = {}
+    } 
+
+
+// coinChange(241)
+// coinChange(50);
+// coinChange(98);
+
+        
+        
+    </script>
+</body>
+</html>

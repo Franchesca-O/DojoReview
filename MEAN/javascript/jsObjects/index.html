@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Objects</title>
+</head>
+<body>
+    <script>
+        students = [
+            {name: 'Remy', cohort: 'Jan'},
+            {name: 'Genevieve', cohort: 'March'},
+            {name: 'Chuck', cohort: 'Jan'},
+            {name: 'Osmund', cohort: 'June'},
+            {name: 'Nikki', cohort: 'June'},
+            {name: 'Boris', cohort: 'June'}
+            ];
+
+        function studentList(students){
+            for(var i = 0; i < students.length; i++){
+                console.log("Name: "+ students[i].name+", Cohort: "+students[i].cohort);
+            }
+        }
+        studentList(students);
+
+
+        users = {
+            employees: [
+                {'first_name':  'Miguel', 'last_name' : 'Jones'},
+                {'first_name' : 'Ernie', 'last_name' : 'Bertson'},
+                {'first_name' : 'Nora', 'last_name' : 'Lu'},
+                {'first_name' : 'Sally', 'last_name' : 'Barkyoumb'}
+            ],
+            managers: [
+                {'first_name' : 'Lillian', 'last_name' : 'Chambers'},
+                {'first_name' : 'Gordon', 'last_name' : 'Poe'}
+            ]
+        };
+
+        function usersObj (users){
+            for(var i = 0; i < Object.keys(users).length; i++){
+                var type = Object.keys(users)[i]
+                var allCaps = type.toUpperCase();
+                console.log(allCaps)
+                var ob = users[Object.keys(users)[i]] //with .length gives 4 for employees and 2 for managers
+                for (var j = 0; j < ob.length; j++){
+                    var first_name = ob[j].first_name.toUpperCase();
+                    var last_name = ob[j].last_name.toUpperCase();
+                    var num = j+1;
+                    console.log(num+" - "+last_name+", "+ first_name+" - "+(first_name.length+last_name.length))
+                }
+            }
+        }
+        usersObj(users);
+    
+    
+    </script>
+    
+</body>
+</html>
